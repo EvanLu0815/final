@@ -110,6 +110,7 @@ int main()
     parallax_ping ping1(pin10);
     parallax_encoder encoder0(pin3, encoder_ticker);
     
+    xbee.printf("Start!\r\n");
     xbee.printf("Go Straight\r\n");
     wait(.01);
     
@@ -279,7 +280,7 @@ int main()
     xbee.printf("Go Straight\r\n");
     car.goStraight(100);
     encoder0.reset();
-    while (encoder0.get_cm() < 23) {
+    while (encoder0.get_cm() < 25) {
         led2 = 0;
         wait(.01);
     }
@@ -306,11 +307,11 @@ int main()
     x[0] = (float)ping1;
     xbee.printf("x[0] = %f, x[1] = %f, x[2] = %f\r\n", 
         x[0], x[1], x[2]);
-    if ((x[1] - x[0] < 5) && (x[2] - x[0] < 5))
+    if ((x[1] - x[0] < 2) && (x[2] - x[0] < 2))
         xbee.printf("rectangle\r\n");
-    else if ((x[0] - x[1] > 5) && (x[0] - x[2] > 5))
+    else if ((x[0] - x[1] > 2) && (x[0] - x[2] > 2))
         xbee.printf("Two triangle\r\n");
-    else if ((x[1] - x[0] > 5) && (x[2] - x[0] > 5))
+    else if ((x[1] - x[0] > 2) && (x[2] - x[0] > 2))
         xbee.printf("Triangle\r\n");
     else
         xbee.printf("Right triangle\r\n");    
@@ -356,6 +357,7 @@ int main()
     car.goStraight(100);
     wait(10);
     car.stop();
+    xbee.printf("End!\r\n");
 }
 
 
