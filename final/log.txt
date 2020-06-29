@@ -1,0 +1,63 @@
+b'Start!\r\n'
+
+b'Go Straight\r\n'
+
+b'Turn Left\r\n'
+
+b'Go Stright\r\n'
+
+b'Turn Right\r\n'
+
+b'Reverse parking\r\n'
+
+b'Leave parking\r\n'
+
+b'Turn Left\r\n'
+
+b'Go to snapshot\r\n'
+
+b'Turn Right\r\n'
+
+b'Reverse parking\r\n'
+
+b'snapshot\r\n'
+
+b'0\r\n'
+
+b'Leave parking\r\n'
+
+b'Turn Right\r\n'
+
+b'Exit Mission 1\r\n'
+
+b'Go Straight\r\n'
+
+b'Enter Mission 2\r\n'
+
+b'Turn right\r\n'
+
+b'Go Straight\r\n'
+
+b'Turn right\r\n'
+
+b'Go Straight\r\n'
+
+b'Turn left\r\n'
+
+b'Object detect\r\n'
+
+b'x[0] = 38.976139, x[1] = 36.215019, x[2] = 58.496337\r\n'
+
+b'Right triangle\r\n'
+
+b'Turn left\r\n'
+
+b'Go Straight\r\n'
+
+b'Exit Mission 2\r\n'
+
+b'Turn right\r\n'
+
+b'Go Straight\r\n'
+
+b'End!\r\n'
